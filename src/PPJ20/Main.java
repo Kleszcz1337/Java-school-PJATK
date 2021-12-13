@@ -4,6 +4,7 @@ package PPJ20;
 public class Main {
     public static void main(String[] args) {
 
+
         //zad1
         Corn corn1 = new Corn(20);
         Popcorn[] arrTest = corn1.makePopcorn();
@@ -25,5 +26,13 @@ public class Main {
         test1.addChar('b');
         test1.show();
         System.out.println(test1.getLength());
+
+        //zad4
+        Phrase objtest = new Phrase();
+        objtest.addWordAtEnd("owaowa");
+        objtest.addWordAtEnd("owa");
+        objtest.addWordAtEnd("awa");
+
+        objtest.show();
     }
 }

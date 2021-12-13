@@ -1,22 +1,32 @@
 package PPJ20;
 
 public class Phrase {
-    public String[] tab;
-    int wrt;
+    String[] phraseArr;
+    int counter;
 
     public Phrase(){
-        this.tab = new String[100];
-        int wrt = 0;
+        this.phraseArr = new String[1];
+        this.counter = 0;
     }
 
     void addWordAtEnd(String Word){
-        tab[wrt++] = Word;
+        if(counter == phraseArr.length)
+           phraseArr = makeTableBigger(phraseArr); //przypisujemy powiększoną tablice o jeden element dla starej tablicy
+        phraseArr[counter++] = Word;               //razem z poprzednimi wartosciami
     }
 
     void show(){
-        for (int i = 0; i < wrt; i++){
-            System.out.print(tab[i] + " ");
-        }
-        System.out.println();
+        for(String i : phraseArr)
+            System.out.print(i + " ");
+    }
+
+    //Zwiększa naszą tablice w miarę potrzeby programu
+    private String[] makeTableBigger(String[] arr){
+        String[] tmpArr = new String[arr.length+1];
+
+        for (int i = 0; i < arr.length; i++)//tutaj wlasnie przypisujemy stare wartosci do nowej tablicy
+            tmpArr[i] = arr[i];                 //oczywiscie ostatni element zostaje pusty do wpisania dla użytkownika
+
+        return tmpArr;
     }
 }

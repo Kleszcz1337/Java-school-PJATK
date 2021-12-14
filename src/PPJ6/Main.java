@@ -41,5 +41,6 @@ public class Main
         System.out.println((y-32)*5/9);
 
         scanner.close();
+
     }
 }

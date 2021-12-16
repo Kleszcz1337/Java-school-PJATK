@@ -18,8 +18,10 @@ public class Main {
 
         //zad1 cz.2
         MyStackArr stos2 = new MyStackArr(3);
-        stos2.push(michal);
-        stos2.push(piotrek);
+        Student seba = new Student(32131, "Sebastian");
+        Student milosz = new Student(34543, "Miłosz");
+        stos2.push(seba);
+        stos2.push(milosz);
 
         while(!stos2.empty()){
             stos2.pop().show();

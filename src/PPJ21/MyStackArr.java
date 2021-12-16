@@ -14,8 +14,10 @@ public class MyStackArr {
         if(licznik1 >= sizeOfStack-1) {
             System.out.println("Nie możesz dodac wiecej elementow");
         }
-        else
-            studentArr[licznik1++] = data;
+        else {
+            studentArr[licznik1] = data;
+            licznik1++;
+        }
     }
 
     public Student pop(){

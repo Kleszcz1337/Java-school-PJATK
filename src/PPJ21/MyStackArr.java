@@ -11,7 +11,7 @@ public class MyStackArr {
     }
 
     public void push(Student data){
-        if(licznik1 >= sizeOfStack-1) {
+        if(licznik1 >= sizeOfStack) {
             System.out.println("Nie możesz dodac wiecej elementow");
         }
         else {
@@ -21,13 +21,13 @@ public class MyStackArr {
     }
 
     public Student pop(){
-        Student student = studentArr[licznik1];
+        Student student = studentArr[licznik1-1];
         studentArr[licznik1] = null;
         licznik1--;
         return student;
     }
 
     public boolean empty(){
-        return studentArr == null;
+        return studentArr[0] == null;
     }
 }

@@ -1,10 +1,10 @@
 package PPJ21;
 
-public class MyStack {
+public class MyQueue {
     private Node head = null;
 
     public void push(Student data){
-            head = new Node(data, head);
+        head = new Node(data, head);
     }
 
     public Student pop(){

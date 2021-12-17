@@ -7,7 +7,7 @@ public class Main {
         Student michal = new Student(24643, "Michal");
         Student piotrek = new Student(32321, "Piotr");
 
-        MyStack stos1 = new MyStack(3); //deklarujemy nasz stos z jego wielkoscia
+        MyStack stos1 = new MyStack(); //deklarujemy nasz stos z jego wielkoscia
 
         stos1.push(michal);
         stos1.push(piotrek);
@@ -17,7 +17,8 @@ public class Main {
         }                       //Jak wyrzucimy juz studentow to nie będzie ich dalej w naszym stosie
 
         //zad1 cz.2
-        MyStackArr stos2 = new MyStackArr(3);
+        System.out.println("zad1 cz.2 ==================");
+        MyStackArr stos2 = new MyStackArr(2);
         Student seba = new Student(32131, "Sebastian");
         Student milosz = new Student(34543, "Miłosz");
         stos2.push(seba);
@@ -26,5 +27,6 @@ public class Main {
         while(!stos2.empty()){
             stos2.pop().show();
         }
+
     }
 }

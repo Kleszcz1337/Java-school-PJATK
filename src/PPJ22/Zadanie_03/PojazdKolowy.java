@@ -1,4 +1,4 @@
-package PPJ22;
+package PPJ22.Zadanie_03;
 
 public class PojazdKolowy extends Pojazd{
     private final int iloscOsi;

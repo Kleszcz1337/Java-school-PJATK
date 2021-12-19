@@ -1,5 +1,16 @@
 package PPJ22;
 
+import PPJ22.Zadanie_01.Graniastoslup;
+import PPJ22.Zadanie_01.Ostroslup;
+import PPJ22.Zadanie_01.Prostopadloscian;
+import PPJ22.Zadanie_01.Trojkat;
+import PPJ22.Zadanie_02.Osoba;
+import PPJ22.Zadanie_02.Spawacz;
+import PPJ22.Zadanie_03.CiagnikSiodlowy;
+import PPJ22.Zadanie_04.Drzewo;
+import PPJ22.Zadanie_05.DrzewoIglaste;
+import PPJ22.Zadanie_05.DrzewoOwocowe;
+
 public class Main {
     public static void main(String[] args) {
         //zad1
@@ -26,6 +37,16 @@ public class Main {
         traktorek.rozpocznijJazde();
 
         //zad4
+        Drzewo kasztanowiec = new Drzewo(false, 20,"Poziomy");
+        System.out.println(kasztanowiec + "\n");
 
+        //zad5
+        DrzewoIglaste sosna = new DrzewoIglaste(20,"Stare drzewo", 200000, 8.16);
+        System.out.println(sosna);
+
+        System.out.println();   //po prostu enter
+
+        DrzewoOwocowe wisnia = new DrzewoOwocowe(20,"Duze", 5, "wisnia");
+        System.out.println(wisnia);
     }
 }

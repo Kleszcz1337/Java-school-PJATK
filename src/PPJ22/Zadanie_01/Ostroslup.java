@@ -1,4 +1,4 @@
-package PPJ22;
+package PPJ22.Zadanie_01;
 
 public class Ostroslup extends Trojkat{
     int wysokoscOstroslupa;

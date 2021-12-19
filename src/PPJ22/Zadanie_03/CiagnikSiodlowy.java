@@ -1,4 +1,4 @@
-package PPJ22;
+package PPJ22.Zadanie_03;
 
 public class CiagnikSiodlowy extends PojazdKolowy{
     int masa;

@@ -1,4 +1,4 @@
-package PPJ22;
+package PPJ22.Zadanie_02;
 
 public class Spawacz extends Osoba{
     private int stazpracy;

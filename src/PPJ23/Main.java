@@ -15,15 +15,18 @@ public class Main {
             owocoweCzwartki[i++] = tmpOwoc;         //Wkladamy nasze owoce do czwartkow
 
             if(tmpOwoc.getNazwa() == "jablko")
-                masaOwocow += tmpOwoc.getMasa();
+                licznikJablek++;
 
             if(tmpOwoc.getNazwa() == "pomarancza")
-                masaOwocow += tmpOwoc.getMasa();
+                licznikPomaranczy++;
 
             if(tmpOwoc.getNazwa() == "gruszka")
-                masaOwocow += tmpOwoc.getMasa();
+                licznikGruszek++;
+
+            masaOwocow += tmpOwoc.getMasa();
         }
         System.out.println(masaOwocow);
         System.out.println(i);
+        System.out.println("Gruszek: " + licznikGruszek + " Jablka: " + licznikJablek + "Pomaranczy: " + licznikPomaranczy);
     }
 }

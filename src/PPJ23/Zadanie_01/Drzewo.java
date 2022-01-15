@@ -1,6 +1,17 @@
 package PPJ23.Zadanie_01;
 
 public class Drzewo {
+    private String name;
+    private int age;
+
+    public Drzewo(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+
+    public String toString(){
+        return super.toString() + " Specyfikacja: " + name + " " + age;
+    }
 
     public static Owoc zerwijOwoc(){
         if(Math.random()<0.33)
